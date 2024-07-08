@@ -1,0 +1,463 @@
+.body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+
+/*****    navbar      *****/
+
+
+.logo{
+    width: 3em;
+    height: 3em;
+}
+.navbar{
+    padding-right: 4em ;
+    z-index: 1;
+    padding-top: 9px;
+    color: rgb(255, 255, 255);
+}
+.navbar-header{
+    box-shadow: -3px 3px 5px white;
+    width: 3.8em;
+    margin-left: 2em;
+}
+.navbar-header a img{
+    border-radius: 10px;
+}
+
+.conteneur_button_navbar{
+    border-radius: 10px;
+    margin-left: 10em ;
+}
+
+.conteneur_button_navbar a{
+    margin-left: 35px !important;
+    margin-top: 0 !important;
+    font-weight:600;
+    color: white ;
+    width: 8em !important;
+    border: none;
+    background-color: transparent;
+    box-shadow: 1px 1px 100px 1px rgb(156, 136, 136);
+    border-radius: 50px;
+}
+
+.nav-link::after{
+    content: " ";
+    background-color: aqua;
+    position:absolute;
+    width: 3.3em;
+    height: 0.1em;
+    display: block;
+}
+
+.nav-item{
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+.nav-item:hover{
+    opacity: 1.5;
+    transform: scale(1.1);
+}
+.nav-item:active{
+    transform: scale(0.9);
+}
+.btn{
+    width: 50% !important;
+    transition: 0.9;
+    margin-top: 2em !important;
+    background-image: linear-gradient(to right, #a78f4f 0%, #ff8800 100%);
+}
+.container_button_action{
+    display: flex;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.test{
+    background-color: red;
+    margin-top: 10em;
+}
+
+
+/*****   interface_d'authentification     *****/
+
+
+.visiter_orange{
+    position: relative;
+    top: 17em;
+    left: 8em;
+    width: 12em;
+    height: 14%;
+}
+.visiter_orange a{
+    width: 9em !important;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(120deg, #ffb23f 0%, #fc4f20 100%);
+    box-shadow: 2px 2px 100px 10px rgb(178, 206, 21);
+    border: solid black 0.2px;
+}
+.visiter_orange a:hover{
+    background-color: rgb(255, 123, 0);
+}
+
+.content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.form_container{
+    background-image: linear-gradient(120deg, #ffc46c 0%, #fc4f20 100%);
+    margin-top: 5.2em;
+    margin-bottom: 10px;
+    padding: 1em;
+    height: 23em;
+    width: 44%;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 2px 2px 100px 10px rgb(178, 206, 21);
+    height: 27em;
+}
+.form_container_sinscrire{
+    padding: 0.8em;
+    height: 27.5em !important;
+}
+.form_container_sinscrire .btn{
+    margin-top: 1.5em !important;
+}
+.form_container_sinscrire .form{
+    height: 26.1em !important;
+    padding-top: 0em !important;
+}
+.form_container input{
+    display: block;
+    margin: 0.5em 0 0.5em 0;
+    width: 15em;
+    height: 1.5em;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: black solid 1px;
+    border-right: black solid 1px;
+    outline: none;
+    z-index: 10;
+    position: relative;
+}
+
+.form_container select{
+    display: block;
+    margin: 2em 0 0.5em 0;
+    width: 15em;
+    height: 2em;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: black solid 1px;
+    border-right: black solid 1px;
+    outline: none;
+    z-index: 10;
+}
+.form_container_sinscrire .image_sms{
+    height: 26.1em !important;
+}
+option{
+    position: absolute;
+    z-index: 1000;
+}
+.form_container .login{
+    background-color: transparent;
+}
+.form_container .form{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    height: 24em;
+    border-radius: 0px 10px 10px 0;
+    
+    }
+.form_container .image_sms{
+    border-radius: 10px 0px 0px 10px;
+    height: 24em ;
+}
+.btn-login{
+    height: 2.1em !important;
+}
+.form_container label{
+    font-weight: bold;
+    position: relative;
+    top: 2em;
+}
+.erreur_zone{
+    position: absolute;
+    left: 56%;
+    color: red;
+}
+.api_erreur{
+    color: red;
+    font-weight: 600;
+    position: absolute;
+    right: 60em;
+    top: 20em;
+    background-color: yellow;
+}
+#display_Or_not{
+    display: none;
+}
+.conteneur_buttons{
+    display: flex;
+}
+.conteneur_buttons button{
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+}
+.image_sms img{
+    width: 14em;
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0.5em;
+    background-color: white;
+    padding: 2px;
+}
+/**** onload event****/
+
+
+
+.conteneur_onload_page{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    z-index: 1001;
+    margin: 0;
+    background-color: transparent;
+}
+.onload_page{
+    position:  fixed;
+    z-index: 100;
+    animation-duration: 3.5s;
+    background-color: transparent;
+    top: 16em;
+    left: 30em;
+    width: 10em;
+    height: 10em;
+    border-radius: 100px;
+    animation-iteration-count: infinite;
+    animation-name: onload;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.onload_page img{
+    border-radius:100em;
+    width: 8em;
+    height: 8em;
+    opacity: 0.8;
+    box-shadow: 2px 2px 100px 20px rgb(0, 0, 0);
+}
+
+@keyframes onload{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*****   footer     *****/
+
+
+.icone{
+    color:white;
+    margin: 10px;
+}
+.footer_container{
+    height: 6em;
+    position: absolute;
+    top: 33em;
+}
+.footer_container div{
+    margin-left: 5em;
+    margin-top: 1em;
+}
+.footer_container .icone_container::after{
+    content:" ";
+    position: absolute;
+    border: white 1px solid;
+    width: 92%;
+    display: block;
+}
+.footer_container div span{
+    margin-right: 5em;
+    color:white;
+    font-size: small;
+}
+.footer_container .zahir span{
+    font-size: large;
+    margin-left: 2em;
+}
+.card_container{
+    width: 20em;
+}
+
+/*****  interface d'authentification  success   *****/
+
+section{
+    padding-top: 6em;
+    height: 33em;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+    
+}
+.card{
+    display: flex !important;
+    justify-content: center !important;
+    margin: 1em;
+    border: 1px rgb(212, 141, 8) solid;
+    box-shadow: 2px 2px 10px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.card img{
+    height: 10em;
+    width: 15em;
+}
+.container_cards{
+    display: flex;
+}
+.card-img-top{
+    margin: 7px;
+    margin-left: 15px;
+}
+
+
+
+/**** ajouter_admin   *****/
+
+
+.parent_content{
+    margin-top: 8em;
+    height: 25em;
+    width: 40em;
+}
+.admin_action{
+    background-image: linear-gradient( 91deg,  rgb(247, 126, 27) 5.2%, rgb(90, 81, 66) 95.9% );
+    height: 26em;
+    margin-bottom: 2em;
+}
+.admin_action .form{
+    height: 24em !important;
+}
+.admin_action img{
+    height: 24em !important;
+}
+.admin_action .btn{
+    height: 2.5em;
+}
+/*** ajouter application ***/
+.ajouter_application{
+    margin-top: 5em;
+}
+.alerter{
+    margin-top: 2em;
+}
+.alerter input{
+    display: inline;
+    width: 5em;
+    height: 1.5em;
+    position: relative;
+    left: 0.8em;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: black solid 1px;
+    border-right: black solid 1px;
+    outline: none;
+    z-index: 10;
+}
+
+.alerter label{
+    position: absolute;
+    top:22.5em;
+    margin-right: 1em;
+    height: 2em ;
+}
+/*** afficher événement ***/
+
+.modifier_container{
+    margin-top: 10em !important;
+    margin-bottom: 9.5em;
+}
+
+.card_modifier{
+    height: 14.5em !important;
+}
+.admin{
+    text-decoration: underline brown;
+}
+.afficher_infos_conteneur{
+    flex-wrap: wrap;
+}
+.afficher_infos_conteneur div{
+    margin:0;
+}
+
+
+/*Profile*/
+.profile_title{
+    width: 14em !important;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/*modifier*/
+.modifier_info label{
+    margin-bottom: 1.5em !important;
+}
+@media (max-width:800px){
+    .authentification_container{
+        background-color: rgb(238, 215, 86);
+        position: relative;
+        top: 16em;
+        height: 21em;
+        width: 25em;
+        border-radius: 10px;
+        display: flex;
+        box-shadow: 2px 2px 100px 10px rgb(178, 206, 21);
+    }
+    .authentification_container .authentification{
+        background-color: white;
+        padding: 1em;
+        width: 10em;
+        margin-left: 0;
+        }
+    .authentification_container input{
+        width: 8em;
+        }
+    .mot_de_passe_oublier{
+        margin-left: 0em;
+        font-weight: 490;
+        font-size: small;
+        }
+    .btn{
+        width: 50% !important;
+        margin-left: 18% !important;
+        padding: 0px 10px 0 8px;
+        }
+    .image_sms img{
+        width: 10em;
+        height: 100%;
+        margin-right: 0;
+        margin-left: 0.5em;
+        }
+}
